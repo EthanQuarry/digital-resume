@@ -28,7 +28,7 @@ export async function NavMenu() {
 						<ul className="grid w-full gap-3 p-4">
 							{components.map((component: any) => (
 								<ListItem
-									key={component.name}
+									key={component.order}
 									title={component.name}
 									href={component.link}
 								>

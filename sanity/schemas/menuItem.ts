@@ -15,5 +15,10 @@ export default defineType({
 			title: "Link",
 			type: "string",
 		}),
+		defineField({
+			name: "order",
+			title: "Order Number",
+			type: "number",
+		})
 	],
 })

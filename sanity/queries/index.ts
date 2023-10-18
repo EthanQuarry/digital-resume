@@ -249,5 +249,6 @@ export async function getMenuItems() {
     _id,
     name,
     link,
+    order
   }`);
 }
