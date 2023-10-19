@@ -13,11 +13,9 @@ import {
 	NavigationMenuTrigger,
 	navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { getMenuItems } from "@/sanity/queries"
-
+import navLinks from "./menuItems"
 
 export async function NavMenu() {
-	const components = await getMenuItems()
 
 	return (
 		<NavigationMenu>
@@ -26,13 +24,13 @@ export async function NavMenu() {
 					<NavigationMenuTrigger>Menu</NavigationMenuTrigger>
 					<NavigationMenuContent>
 						<ul className="grid w-full gap-3 p-4">
-							{components.map((component: any) => (
+							{navLinks.map((link: any) => (
 								<ListItem
-									key={component.order}
-									title={component.name}
-									href={component.link}
+									key={link.order}
+									title={link.name}
+									href={link.link}
 								>
-									{component.description}
+									{link.description}
 								</ListItem>
 							))}
 						</ul>

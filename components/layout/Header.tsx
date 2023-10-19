@@ -1,13 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
-import { getMenuItems } from '@/sanity/queries'
 import { NavMenu } from './NavMenu'
 import { Button } from '../ui/button'
 import { ModeToggle } from '../providers/mode-toggle'
+import navLinks from './menuItems'
 import Image from 'next/image'
 
 async function Header() {
-	const navLinks = await getMenuItems()
 
 	return (
 		<div className='w-full h-16 px-4 shadow bg-background text-foreground flex items-center justify-center'>
@@ -37,7 +36,9 @@ async function Header() {
 
 				<div className="flex ml-2 justify-around items-center">
 					<ModeToggle />
-					<Button className="bg-primary max-h-12 mx-2 px-4 py-2 rounded-md">Contact</Button>
+					<Link href={"/contact"}>
+						<Button className="bg-primary max-h-12 mx-2 px-4 py-2 rounded-md">Contact</Button>
+					</Link>
 				</div>
 
 			</div>
