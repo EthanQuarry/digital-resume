@@ -58,7 +58,7 @@ export function ContactForm() {
 		<div className="flex flex-col w-full items-center">
 			<Form {...form}>
 
-				<form action={`https://formbold.com/s/${process.env.FORM_ID}`} method="POST" className="space-y-8 w-full max-w-xl">
+				<form action={`https://formbold.com/s/${process.env.NEXT_PUBLIC_FORM_ID}`} method="POST" className="space-y-8 w-full max-w-xl">
 					<FormField
 						control={form.control}
 						name="name"
@@ -124,7 +124,7 @@ export function ContactForm() {
 							</FormItem>
 						)}
 					/>
-					<div className="g-recaptcha" data-sitekey={process.env.RECAPTCHA_SITE_KEY}></div>
+					<div className="g-recaptcha" data-sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}></div>
 					<Button type="submit">Submit</Button>
 				</form>
 
