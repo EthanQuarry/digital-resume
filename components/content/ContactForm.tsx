@@ -55,7 +55,7 @@ export function ContactForm() {
 	// }
 
 	return (
-		<div className="flex flex-col">
+		<div className="flex flex-col w-full items-center">
 			<Form {...form}>
 
 				<form action={`https://formbold.com/s/${process.env.FORM_ID}`} method="POST" className="space-y-8 w-full max-w-xl">
