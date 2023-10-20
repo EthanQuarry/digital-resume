@@ -7,7 +7,7 @@ export default async function ResumePage() {
 		<>
 			<title>Resume | {siteConfig.title}</title>
 
-			<section className="py-16">
+			<section className="py-4">
 				<div className="container">
 					<Experiences />
 				</div>
