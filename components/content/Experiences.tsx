@@ -1,6 +1,7 @@
 import React from 'react'
 import { getExperiences } from "@/sanity/queries";
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { Separator } from '../ui/separator'
 import { PortableText } from '@portabletext/react';
 
 export async function Experiences() {
@@ -12,8 +13,8 @@ export async function Experiences() {
 				{experiences.map((experience: any, index: number) => (
 					<Card className="w-full mb-6 p-2" key={index}>
 						<CardHeader>
-							<h1 className='text-3xl'>{experience.company}</h1>
-							<h2 className='text-2xl'>{experience.title}</h2>
+							<h1 className='text-2xl text-bold md:text-3xl lg:text-4xl'>{experience.company}</h1>
+							<h2 className='text-xl md:text-2xl lg:text-3xl '>{experience.title}</h2>
 						</CardHeader>
 						<CardContent>
 							<div className="mb-2 flex w-full max-w-lg">
@@ -21,6 +22,7 @@ export async function Experiences() {
 								&nbsp;<p>to</p>&nbsp;
 								<h3 className='text-md'><em>{experience.end}</em></h3>
 							</div>
+							<Separator />
 							<PortableText value={experience.description} />
 						</CardContent>
 					</Card>
