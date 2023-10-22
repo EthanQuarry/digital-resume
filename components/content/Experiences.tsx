@@ -28,7 +28,7 @@ export async function Experiences() {
 						</CardContent>
       <CardFooter>
         {experience.skills.map((skill: any, index: number) => (
-								<Badge className='mr-2'>{skill.title}</Badge>))}
+								<Badge className='mr-2' key={index}>{skill.title}</Badge>))}
       </CardFooter>
 					</Card>
 				))}
