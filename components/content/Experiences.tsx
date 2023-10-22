@@ -1,7 +1,8 @@
 import React from 'react'
 import { getExperiences } from "@/sanity/queries";
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '../ui/card';
 import { Separator } from '../ui/separator'
+import { Badge } from '../ui/badge'
 import { PortableText } from '@portabletext/react';
 
 export async function Experiences() {
@@ -22,9 +23,13 @@ export async function Experiences() {
 								&nbsp;<p>to</p>&nbsp;
 								<h3 className='text-md'><em>{experience.end}</em></h3>
 							</div>
-							<Separator />
+							<Separator className='my-2 w-full' />
 							<PortableText value={experience.description} />
 						</CardContent>
+      <CardFooter>
+        {experience.skills.map((skill: any, index: number) => (
+								<Badge className='mr-2'>{skill.title}</Badge>))}
+      </CardFooter>
 					</Card>
 				))}
 			</div>
