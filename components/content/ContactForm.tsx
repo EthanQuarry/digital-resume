@@ -30,7 +30,6 @@ const formSchema = z.object({
 	message: z.string().min(1, {
 		message: "Please enter a message.",
 	}),
-	file: z.string().optional(),
 })
 
 export function ContactForm() {
@@ -42,7 +41,6 @@ export function ContactForm() {
 			email: "",
 			subject: "",
 			message: "",
-			file: "",
 		},
 	})
 
@@ -106,19 +104,6 @@ export function ContactForm() {
 								<FormLabel>Message{" "}<span className="text-destructive">*</span></FormLabel>
 								<FormControl>
 									<Textarea {...field} required />
-								</FormControl>
-								<FormMessage />
-							</FormItem>
-						)}
-					/>
-					<FormField
-						control={form.control}
-						name="file"
-						render={({ field }) => (
-							<FormItem>
-								<FormLabel>Attach File</FormLabel>
-								<FormControl>
-									<Input type="file" {...field} />
 								</FormControl>
 								<FormMessage />
 							</FormItem>
