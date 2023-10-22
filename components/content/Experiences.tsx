@@ -10,7 +10,7 @@ export async function Experiences() {
 		<div className="w-full px-4 flex flex-col items-center justify-start">
 			<div className="w-full max-w-4xl flex flex-col items-center justify-evenly">
 				{experiences.map((experience: any, index: number) => (
-					<Card className="w-full mb-6 p-4" key={index}>
+					<Card className="w-full mb-6 p-2" key={index}>
 						<CardHeader>
 							<h1 className='text-3xl'>{experience.company}</h1>
 							<h2 className='text-2xl'>{experience.title}</h2>
