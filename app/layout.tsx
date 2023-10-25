@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from '@/components/providers/theme-provider'
+import { getSite } from '@/sanity/queries'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Resume | Michael Kamilos',
-  description: 'Software Engineer and Full-stack Developer',
+  title: "Digital Resume",
+  description: "Digital Resume template made with NextJS and Sanity CMS",
 }
 
 export default function RootLayout({

@@ -1,6 +1,16 @@
 import { groq } from "next-sanity";
 import { client } from "../lib/client";
 
+export async function getSite() {
+  return client.fetch(groq`*[_type == "site"][0] {
+    _id,
+    title,
+    description,
+    favicon,
+    logo
+  }`);
+}
+
 export async function getPosts() {
   return client.fetch(groq`*[_type == "post"] {
     title,
