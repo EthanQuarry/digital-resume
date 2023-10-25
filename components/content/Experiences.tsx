@@ -22,7 +22,7 @@ export async function Experiences() {
 							<span className="mb-4 flex w-full max-w-lg">
 								<h3 className='text-md'>{experience.start}</h3>
 								&nbsp;<p>--</p>&nbsp;
-								<h3 className='text-md'>{experience.end}</h3>
+								<h3 className='text-md'>{experience.end ? experience.end : "Present"}</h3>
 							</span>
 							<Separator className='my-2 w-full' />
 							<PortableText value={experience.description} />
