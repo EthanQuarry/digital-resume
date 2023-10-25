@@ -109,7 +109,6 @@ export function ContactForm() {
 							</FormItem>
 						)}
 					/>
-					<div className="g-recaptcha" data-sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}></div>
 					<Button type="submit">Submit</Button>
 				</form>
 
