@@ -1,3 +1,4 @@
+"use client"
 import { ContactForm } from "@/components/content/ContactForm";
 import { siteConfig } from "@/config";
 
