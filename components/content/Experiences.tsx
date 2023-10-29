@@ -28,8 +28,10 @@ export async function Experiences() {
 							<PortableText value={experience.description} />
 						</CardContent>
 						<CardFooter>
+							<div className="flex flex-wrap justify-start items-center">
 							{experience.skills.map((skill: any, index: number) => (
 								<Badge className='mr-2' key={index}>{skill.title}</Badge>))}
+							</div>
 						</CardFooter>
 					</Card>
 				))}
