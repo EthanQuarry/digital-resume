@@ -30,7 +30,7 @@ export async function Experiences() {
 						<CardFooter>
 							<div className="flex flex-wrap justify-start items-center">
 							{experience.skills.map((skill: any, index: number) => (
-								<Badge className='mr-2' key={index}>{skill.title}</Badge>))}
+								<Badge className='mr-2 mb-1' key={index}>{skill.title}</Badge>))}
 							</div>
 						</CardFooter>
 					</Card>
