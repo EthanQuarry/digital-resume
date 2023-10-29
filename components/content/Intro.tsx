@@ -1,6 +1,8 @@
-import { getIntro } from '@/sanity/queries'
+import { getIntro } from "@/sanity/queries";
+import Link from "next/link";
+import { PortableText } from "@portabletext/react";
 
-export default async function Intro() {
+export async function Intro() {
     const intro = await getIntro()
 
     return (
