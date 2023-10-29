@@ -11,6 +11,7 @@ export default async function ResumePage() {
                 <div className="container">
 					<Intro />
 				</div>
+            </section>
 			<section className="py-4">
 				<div className="container">
 					<Experiences />
