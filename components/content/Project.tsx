@@ -27,7 +27,7 @@ export default function SingleProject({ project }: { project: any }) {
 					<div className="flex flex-col justify-start items-start">
 						<Link
 							href={`/portfolio/${slug.current}`}
-							className="mb-2 block text-xl font-bold text-foreground duration-300 hover:text-primary"
+							className="mb-2 block text-xl font-bold text-foreground duration-300 hover:text-accent"
 						>
 							<h3>{`${name.slice(0, 40)}`}</h3>
 						</Link>

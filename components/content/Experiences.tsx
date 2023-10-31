@@ -7,7 +7,6 @@ import { PortableText } from '@portabletext/react';
 
 export async function Experiences() {
 	const experiences = await getExperiences();
-	experiences.sort((a: any, b: any) => (a.start > b.start) ? -1 : 1)
 
 	return (
 		<div className="w-full px-2 flex flex-col items-center justify-start">
@@ -29,8 +28,8 @@ export async function Experiences() {
 						</CardContent>
 						<CardFooter>
 							<div className="w-full flex flex-wrap justify-start items-center">
-							{experience.skills.map((skill: any, index: number) => (
-								<Badge className='mx-1 mb-1' key={index}>{skill.title}</Badge>))}
+								{experience.skills.map((skill: any, index: number) => (
+									<Badge className='mx-1 mb-1' key={index}>{skill.title}</Badge>))}
 							</div>
 						</CardFooter>
 					</Card>

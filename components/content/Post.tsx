@@ -10,7 +10,7 @@ export default function SinglePost({ post }: { post: any }) {
 	return (
 		<>
 			<div
-				className="wow fadeInUp relative overflow-hidden group rounded-md shadow duration-300"
+				className="wow fadeInUp relative bg-card overflow-hidden group rounded-md shadow duration-300"
 				data-wow-delay=".1s"
 			>
 				<Link
@@ -30,7 +30,7 @@ export default function SinglePost({ post }: { post: any }) {
 					<h3>
 						<Link
 							href={`/blog/${slug.current}`}
-							className="mb-4 block text-xl font-bold text-black duration-300 hover:text-primary dark:text-white dark:hover:text-primary sm:text-[22px]"
+							className="mb-4 block text-xl font-bold duration-300 hover:text-accent sm:text-[22px]"
 						>
 							{`${title.slice(0, 40)}...`}
 						</Link>

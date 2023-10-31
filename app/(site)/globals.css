@@ -4,7 +4,7 @@
  
 @layer base {
   :root {
-    --background: 0,0%,98%;  /* zinc-50 */
+    --background: 240,4.8%,95.9%;  /* zinc-100 */
     --foreground: 240,5.3%,26.1%; /* zinc-700 */
 
     --muted: 240,5.9%,90%; /* zinc-200 */
@@ -43,7 +43,7 @@
     --muted: 240,5.9%,10%;  /* zinc-900 */
     --muted-foreground: 240,3.8%,46.1%;  /* zinc-500 */
 
-    --popover: 240,3.7%,15.9%; /* zinc-800 */
+    --popover: 240,5.3%,26.1%; /* zinc-700 */
     --popover-foreground: 240,4.8%,95.9%;  /* zinc-100 */
 
     --border: 160.1,84.1%,39.4%; /* emerald-500 */
