@@ -15,11 +15,6 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <head>
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"></link>
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-        <script type="text/javascript">window.onload = function() {{ Calendly.initBadgeWidget({ url: 'https://calendly.com/mikam-dev', text: 'Schedule a call', color: '#10b981', textColor: '#fafafa', branding: true }) }}</script>
-      </head>
       <Header />
       {children}
       <Footer />
