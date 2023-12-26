@@ -6,7 +6,11 @@ import { Badge } from '../ui/badge'
 import { PortableText } from '@portabletext/react';
 
 export async function Experiences() {
-	const experiences = await getExperiences();
+	let experiences = await getExperiences();
+
+	experiences = experiences.sort((a: any, b: any) => {
+		return b.key - a.key
+	})
 
 	return (
 		<div className="w-full px-2 flex flex-col items-center justify-start">
@@ -20,7 +24,7 @@ export async function Experiences() {
 						<CardContent>
 							<span className="mb-4 flex w-full max-w-lg">
 								<h3 className='text-md'>{experience.start}</h3>
-								&nbsp;<p>--</p>&nbsp;
+								&nbsp;<p>-</p>&nbsp;
 								<h3 className='text-md'>{experience.end ? experience.end : "Present"}</h3>
 							</span>
 							<Separator className='my-2 w-full' />
