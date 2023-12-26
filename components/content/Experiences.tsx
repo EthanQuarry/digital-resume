@@ -11,11 +11,11 @@ export async function Experiences() {
 	return (
 		<div className="w-full px-2 flex flex-col items-center justify-start">
 			<div className="w-full max-w-4xl flex flex-col items-center justify-evenly">
-				{experiences.map((experience: any, index: number) => (
-					<Card className="w-full mb-6 p-2" key={index}>
+				{experiences.map((experience: any) => (
+					<Card className="w-full mb-6 p-2" key={experience.key}>
 						<CardHeader>
-							<h1 className='text-2xl text-bold md:text-3xl lg:text-4xl'>{experience.company}</h1>
-							<h2 className='text-xl md:text-2xl lg:text-3xl '>{experience.title}</h2>
+							<h1 className='text-primary text-2xl font-bold md:text-3xl lg:text-4xl'>{experience.company}</h1>
+							<h2 className='text-lg font-semibold md:text-xl lg:text-2xl '>{experience.title}</h2>
 						</CardHeader>
 						<CardContent>
 							<span className="mb-4 flex w-full max-w-lg">

@@ -18,7 +18,7 @@ async function Header() {
 				<div className="flex mr-2 justify-around items-center">
 					<div className="ml-2">
 						<Link href={"/"}>
-							<Image src={"/logo.png"} alt="logo" width={96} height={96} className='max-h-16 min-h-16 w-auto' />
+							<Image src={"/logo.png"} alt="logo" width={96} height={96} className='max-h-16 h-16 min-w-16 w-auto' />
 						</Link>
 					</div>
 				</div>

@@ -110,6 +110,7 @@ export async function getEducation() {
 export async function getExperiences() {
   return client.fetch(groq`*[_type == "experience"] {
     _id,
+    key,
     company,
     title,
     start,
@@ -130,6 +131,7 @@ export async function getExperience(slug: string) {
   return client.fetch(
     groq`*[_type == "experience" && slug.current == $slug] {
       _id,
+      key,
       company,
       title,
       start,

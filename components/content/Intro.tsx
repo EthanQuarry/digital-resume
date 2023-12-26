@@ -10,7 +10,7 @@ export async function Intro() {
       <h1 className="mb-4 text-4xl font-bold leading-tight sm:text-5xl">
         {intro?.name}
       </h1>
-      <h4 className="mb-6 text-xl sm:text-2xl">{intro?.location}</h4>
+      <h3 className="mb-6 text-xl sm:text-2xl">{intro?.location}</h3>
       <PortableText value={intro?.summary} />
     </div>
   )
