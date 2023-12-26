@@ -5,11 +5,8 @@ import { Button } from '../ui/button'
 import { ModeToggle } from '../providers/mode-toggle'
 import navLinks from './menuItems'
 import Image from 'next/image'
-import { getSite } from '@/sanity/queries'
-import { urlForImage } from "@/sanity/lib/image";
 
 async function Header() {
-	const site = await getSite()
 
 	return (
 		<div className='w-full h-16 px-4 shadow bg-background text-foreground flex items-center justify-center'>
