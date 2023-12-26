@@ -18,7 +18,7 @@ export default async function Home() {
 
       <main className="flex min-h-screen flex-col items-center justify-between">
         <Section>
-          <div className="flex w-full max-w-3xl h-auto min-h-[40vh] md:min-h-[78vh] flex-col items-center text-center md:items-start md:text-start justify-evenly p-4 md:p-8 lg:p-12 text-card-foreground">
+          <div className="flex w-full max-w-3xl h-auto min-h-[40vh] md:min-h-[78vh] flex-col items-center text-center md:items-start md:text-start justify-evenly p-4 md:p-8 lg:p-12 text-card-foreground rounded-l-lg">
             <h1 className="mb-4 text-4xl font-bold sm:text-5xl md:text-6xl">
               {siteConfig.title} of {intro?.name}
             </h1>
@@ -35,7 +35,7 @@ export default async function Home() {
               </Link>
             </div>
           </div>
-          <div className="flex w-full max-w-3xl h-auto min-h-[28vh] md:min-h-[78vh] flex-col items-center justify-around p-4 md:p-8 lg:p-12 text-card-foreground">
+          <div className="flex w-full max-w-3xl h-auto min-h-[28vh] md:min-h-[78vh] flex-col items-center justify-around p-4 md:p-8 lg:p-12 text-card-foreground rounded-r-lg">
             <Image src="/undraw_male_web.svg" alt="logo" width={96} height={96} className="w-auto min-h-[300px] md:min-h-[360px] h-[24vh] md:h-[60vh] max-h-[800px]" />
           </div>
         </Section>
