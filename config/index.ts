@@ -1,5 +1,5 @@
 export const siteConfig = {
-	title: 'Official Website',
+	title: 'Developer Portfolio',
 	description: 'A digital resume built with Next.js and Sanity.io',
 	name: "Digital Resume",
 	owner: "Michael Kamilos",
@@ -7,7 +7,7 @@ export const siteConfig = {
 }
 
 export const studioConfig = {
-	title: 'Official Website',
+	title: 'Developer Portfolio Studio',
 	description: 'A digital resume built with Next.js and Sanity.io',
 	name: "Digital Resume Studio",
 	owner: "Michael Kamilos",
