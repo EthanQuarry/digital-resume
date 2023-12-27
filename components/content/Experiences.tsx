@@ -18,8 +18,8 @@ export async function Experiences() {
 				{experiences.map((experience: any) => (
 					<Card className="w-full mb-6 p-2" key={experience.key}>
 						<CardHeader>
-							<h1 className='text-2xl font-bold md:text-3xl lg:text-4xl'>{experience.company}</h1>
-							<h2 className='text-lg font-semibold md:text-xl lg:text-2xl '>{experience.title}</h2>
+							<h1 className='text-2xl font-bold md:text-3xl lg:text-4xl'>{experience.title}</h1>
+							<h2 className='text-lg font-semibold md:text-xl lg:text-2xl '>{experience.company}</h2>
 						</CardHeader>
 						<CardContent>
 							<span className="mb-4 flex w-full max-w-lg">

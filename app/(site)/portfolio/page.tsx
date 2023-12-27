@@ -1,6 +1,7 @@
-import SingleProject from "@/components/content/Project";
 import { siteConfig } from "@/config";
 import { getProjects } from "@/sanity/queries";
+import SingleProject from "@/components/content/Project";
+import Section from "@/components/layout/Section";
 
 export default async function ProjectPage() {
 	const projects = await getProjects();
@@ -9,7 +10,7 @@ export default async function ProjectPage() {
 		<>
 			<title>Portfolio | {siteConfig.title}</title>
 
-			<section className="py-16">
+			<Section>
 				<div className="container">
 					<div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-3">
 						{projects.length > 0 &&
@@ -18,7 +19,7 @@ export default async function ProjectPage() {
 							))}
 					</div>
 				</div>
-			</section>
+			</Section>
 		</>
 	);
 }

@@ -16,7 +16,9 @@ export default function RootLayout({
   return (
     <>
       <Header />
-      {children}
+      <main className="flex flex-col bg-muted min-h-[92vh] items-center justify-between">
+        {children}
+      </main>
       <Footer />
     </>
   )

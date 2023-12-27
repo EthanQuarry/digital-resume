@@ -7,11 +7,9 @@ export default async function ResumePage() {
 	return (
 		<>
 			<title>Resume | {siteConfig.title}</title>
-			<section className="py-4">
-				<div className="container flex flex-col items-center justify-evenly">
-					<Intro />
-					<Experiences />
-				</div>
+			<section className="flex flex-col w-full max-w-6xl px-4 py-8 mx-auto items-center justify-evenly">
+				<Intro />
+				<Experiences />
 			</section>
 		</>
 	)

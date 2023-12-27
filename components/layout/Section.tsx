@@ -1,6 +1,7 @@
+"use client"
 import React from 'react'
 
-function Section({
+export function Section({
 	children,
 	reverse = false,
 }: {
@@ -8,11 +9,11 @@ function Section({
 	reverse?: boolean
 }) {
 	return (
-		<div className={`flex items-center justify-center w-full min-h-[90vh] bg-gradient-to-b from-background via-muted to-background m-0 p-8 md:p-12`}>
+		<section className={`flex items-center justify-center w-full min-h-[92vh] bg-gradient-to-br from-muted via-background to-muted m-0 p-8 md:p-12`}>
 			<div className={`flex ${reverse ? 'flex-col md:flex-row-reverse' : 'flex-col-reverse md:flex-row'} items-start justify-between w-full max-w-6xl`}>
 				{children}
 			</div>
-		</div>
+		</section>
 	)
 }
 
