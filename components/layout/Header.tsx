@@ -9,7 +9,7 @@ import Image from 'next/image'
 async function Header() {
 
 	return (
-		<header className='top-0 sticky w-full h-[8vh] max-h-16 px-4 bg-background shadow text-foreground flex items-center justify-center'>
+		<header className='w-full h-[8vh] max-h-16 px-4 bg-background shadow text-foreground flex items-center justify-center'>
 			<div className="w-full max-w-7xl mx-2 flex justify-between items-center">
 				<div className="flex mr-2 justify-around items-center">
 					<div className="ml-2">
