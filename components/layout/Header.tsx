@@ -11,11 +11,10 @@ async function Header() {
 	return (
 		<header className='top-0 sticky w-full h-[8vh] max-h-16 px-4 bg-background shadow text-foreground flex items-center justify-center'>
 			<div className="w-full max-w-7xl mx-2 flex justify-between items-center">
-
 				<div className="flex mr-2 justify-around items-center">
 					<div className="ml-2">
 						<Link href={"/"}>
-							<Image src={"/logo.png"} alt="logo" width={96} height={96} className='h-auto w-16' />
+							<Image src={"/logo.png"} alt="logo" width={96} height={96} className='h-auto min-w-10 w-10' />
 						</Link>
 					</div>
 				</div>
