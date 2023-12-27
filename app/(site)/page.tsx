@@ -4,7 +4,7 @@ import { siteConfig } from "@/config";
 import { Section } from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 
-export function Home() {
+export default function HomePage() {
 
   return (
     <>
@@ -35,5 +35,3 @@ export function Home() {
     </>
   )
 }
-
-export default Home
