@@ -66,7 +66,7 @@ export default async function APOD() {
 				<div className="w-full h-auto p-4 flex flex-col items-center justify-start md:w-[50%] md:max-w-2xl">
 					<Card className="border-none rounded-3xl p-4">
 						<CardHeader>
-							<CardTitle className="self-center bg-gradient-to-b from-indigo-600 to-foreground inline-block text-transparent bg-clip-text sm:text-3xl md:self-start md:text-4xl lg:text-5xl">{image.title}</CardTitle>
+							<CardTitle className={`self-center sm:text-3xl md:self-start md:text-4xl lg:text-5xl`}>{image.title}</CardTitle>
 							<CardDescription className="self-center md:self-start">{image.date}</CardDescription>
 						</CardHeader>
 						<CardContent>{image.explanation}</CardContent>
