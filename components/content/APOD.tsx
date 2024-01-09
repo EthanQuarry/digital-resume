@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Section from '../layout/Section'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
 
 
 async function getImage(date?: string) {
@@ -62,12 +63,15 @@ export default async function APOD() {
 					)}
 				</div>
 
-				<div className="w-full h-auto p-4 flex flex-col md:w-[50%] md:max-w-2xl">
-					<h1 className="font-bold text-2xl mb-6 self-center md:self-start md:text-3xl lg:text-4xl">{image.title}</h1>
-					<h3 className="mb-8 flex justify-center items-center md:justify-start">{image.date}</h3>
-					<p className="h-auto">{image.explanation}</p>
+				<div className="w-full h-auto p-4 flex flex-col items-center justify-start md:w-[50%] md:max-w-2xl">
+					<Card className="border-none rounded-3xl p-4">
+						<CardHeader>
+							<CardTitle className="self-center sm:text-3xl md:self-start md:text-4xl lg:text-5xl">{image.title}</CardTitle>
+							<CardDescription className="self-center md:self-start">{image.date}</CardDescription>
+						</CardHeader>
+						<CardContent>{image.explanation}</CardContent>
+					</Card>
 				</div>
-
 			</Section>
 		</>
 	)
