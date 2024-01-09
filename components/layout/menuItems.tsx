@@ -9,10 +9,10 @@ export const navLinks = [
 		link: '/portfolio',
 		order: 2
 	},
-	{
-		name: 'Blog',
-		link: '/blog',
-		order: 3
-	},
+	// {
+	// 	name: 'Blog',
+	// 	link: '/blog',
+	// 	order: 3
+	// },
 ]
 export default navLinks

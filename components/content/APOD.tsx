@@ -71,6 +71,7 @@ export default async function APOD() {
 						</CardHeader>
 						<CardContent>{image.explanation}</CardContent>
 					</Card>
+
 				</div>
 			</Section>
 		</>
