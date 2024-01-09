@@ -2,7 +2,7 @@ import { Experiences } from "@/components/content/Experiences";
 import { Intro } from "@/components/content/Intro";
 import { siteConfig } from "@/config";
 
-export default async function ResumePage() {
+export default function ResumePage() {
 
 	return (
 		<>

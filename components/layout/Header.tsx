@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
-import { NavMenu } from './NavMenu'
+import NavMenu from './NavMenu'
 import { Button } from '../ui/button'
 import { ModeToggle } from '../providers/mode-toggle'
 import navLinks from './menuItems'
 import Image from 'next/image'
 
-async function Header() {
+export default function Header() {
 
 	return (
 		<header className='top-0 sticky w-full h-[8vh] max-h-16 px-4 bg-background shadow text-foreground flex items-center justify-center'>
@@ -44,5 +44,3 @@ async function Header() {
 		</header>
 	)
 }
-
-export default Header

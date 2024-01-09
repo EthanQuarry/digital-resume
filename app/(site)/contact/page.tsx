@@ -1,4 +1,3 @@
-"use client"
 import Image from "next/image"
 import { ContactForm } from "@/components/content/ContactForm";
 import { siteConfig } from "@/config";

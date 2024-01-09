@@ -1,5 +1,4 @@
 "use client"
-
 import * as React from "react"
 import Link from "next/link"
 
@@ -15,7 +14,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import navLinks from "./menuItems"
 
-export async function NavMenu() {
+export default function NavMenu() {
 
 	return (
 		<NavigationMenu>

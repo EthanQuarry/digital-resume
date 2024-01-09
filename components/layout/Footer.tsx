@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Footer() {
+export default function Footer() {
 	return (
 		<footer className='w-full min-h-16 h-fit px-4 bg-background shadow text-foreground flex items-center justify-center'>
 			<div className="w-full max-w-7xl flex justify-between items-center">
@@ -17,5 +17,3 @@ function Footer() {
 		</footer>
 	)
 }
-
-export default Footer

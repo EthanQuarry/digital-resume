@@ -1,7 +1,7 @@
 import { siteConfig } from "@/config";
 import { getPosts } from "@/sanity/queries";
 import SingleBlog from "@/components/content/Post";
-import { Section } from "@/components/layout/Section";
+import Section from "@/components/layout/Section";
 
 export default async function BlogPage() {
 	const posts = await getPosts();
