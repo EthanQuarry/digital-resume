@@ -2,7 +2,7 @@ import React from 'react'
 
 import { cn } from "@/lib/utils"
 
-export default async function Section({
+export default function Section({
 	className,
 	children,
 	rx = false,

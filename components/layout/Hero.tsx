@@ -2,7 +2,7 @@ import React from 'react'
 
 import { cn } from "@/lib/utils"
 
-export default async function Hero({
+export default function Hero({
 	className,
 	children,
 	rx = false,

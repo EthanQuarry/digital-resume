@@ -1,28 +1,22 @@
+"use client"
+import { getImage } from '@/lib/utils';
+import { format } from "date-fns";
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import Section from '../layout/Section';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
+import { DatePicker } from '../ui/date-picker';
 
 
-async function getImage(date?: string) {
-	// Server request to NASA API
-	const baseUrl = new URL(`https://api.nasa.gov/planetary/apod?api_key=${process.env.NASA_API_KEY}`);
+export default function APOD() {
+	const [image, setImage] = useState({} as any);
+	const [date, setDate] = useState(format(new Date(), 'yyyy-MM-dd'));
 
-	try {
-		const image = await fetch(`${baseUrl}&date=${date}`, {
-			method: 'GET',
-			next: { revalidate: 600 }
-		}).then((res) => res.json());
-
-		console.log(image)
-		return image;
-	} catch (error) {
-		console.log(error)
-	}
-}
-
-export default async function APOD() {
-
-	const image = await getImage('')
+	useEffect(() => {
+		getImage(date.toString()).then((image) => {
+			setImage(image);
+		})
+	}, [date])
 
 	if (!image) return (
 		<div className="w-full h-screen flex items-center justify-center bg-gradient-to-b from-background to-muted md:bg-gradient-to-r">
@@ -32,9 +26,15 @@ export default async function APOD() {
 
 	return (
 		<>
-			<span className="w-full min-h-fit px-8 flex items-center justify-center bg-gradient-to-b from-card to-background ">
+			<span className="w-full min-h-fit px-8 flex flex-col items-center justify-center bg-gradient-to-b from-card to-background ">
 				<h2 className="font-extrabold text-3xl p-2 m-2 bg-gradient-to-t from-card-foreground to-shade inline-block text-transparent bg-clip-text sm:text-4xl md:text-5xl lg:text-6xl dark:bg-gradient-to-b">Astronomy Picture of the Day
 				</h2>
+
+				<DatePicker onDateChange={(date: string) => {
+					setDate(date);
+					console.log(date);
+				}}
+				/>
 			</span>
 			<Section rx>
 				<div className="w-full h-auto p-4 flex flex-col items-center justify-start md:w-[50%] md:max-w-2xl">
