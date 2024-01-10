@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import Section from '../layout/Section'
+import Image from 'next/image';
+import Section from '../layout/Section';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
 
 
@@ -32,8 +32,9 @@ export default async function APOD() {
 
 	return (
 		<>
-			<span className="w-full min-h-fit px-8 flex items-center justify-center bg-background">
-				<h2 className="font-extrabold text-3xl p-2 m-2 bg-gradient-to-r from-foreground to-muted-foreground inline-block text-transparent bg-clip-text sm:text-4xl md:text-5xl lg:text-6xl">Astronomy Picture of the Day</h2>
+			<span className="w-full min-h-fit px-8 flex items-center justify-center bg-gradient-to-b from-card to-background ">
+				<h2 className="font-extrabold text-3xl p-2 m-2 bg-gradient-to-t from-card-foreground to-shade inline-block text-transparent bg-clip-text sm:text-4xl md:text-5xl lg:text-6xl dark:bg-gradient-to-b">Astronomy Picture of the Day
+				</h2>
 			</span>
 			<Section rx>
 				<div className="w-full h-auto p-4 flex flex-col items-center justify-start md:w-[50%] md:max-w-2xl">

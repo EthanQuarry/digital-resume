@@ -34,6 +34,12 @@
     --ring: 158.1,64.4%,51.6%; /* emerald-400 */
 
     --radius: 0.5rem;
+
+    --highlight: 50,100%,60%; /* gold -light */
+    --highlight-foreground: 240,4.8%,95.9%;  /* zinc-100 */
+
+    --shade: 270,50%,69%; /* amethyst -light */
+    --shade-foreground: 240,4.8%,95.9%;  /* zinc-100 */
   }
 
   .dark {
@@ -67,6 +73,12 @@
     --ring: 160.1,84.1%,39.4%; /* emerald-500 */
 
     --radius: 0.5rem;
+
+    --highlight: 50,100%,40%; /* gold -dark*/
+    --highlight-foreground: 240,4.8%,95.9%;  /* zinc-100 */
+
+    --shade: 270,50%,21%; /* amethyst -dark*/
+    --shade-foreground: 240,4.8%,95.9%;  /* zinc-100 */
   }
 }
  
