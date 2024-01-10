@@ -10,6 +10,7 @@ async function getImage(date?: string) {
 	try {
 		const image = await fetch(`${baseUrl}&date=${date}`, {
 			method: 'GET',
+			next: { revalidate: 600 }
 		}).then((res) => res.json());
 
 		console.log(image)
